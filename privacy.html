@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Bulk SEO Traffic Checker</title>
+<meta name="description" content="Privacy policy for the Bulk SEO Traffic Checker Chrome extension.">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .5rem; }
+  .meta { color: #667; font-size: .9rem; margin: 0 0 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: .75rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #bbc; padding: .45rem .6rem; text-align: left;
+           vertical-align: top; }
+  a { color: #0b57d0; }
+  code { font-size: .92em; }
+  footer { margin-top: 3rem; border-top: 1px solid #bbc; padding-top: 1rem;
+           font-size: .88rem; color: #667; }
+  nav { margin-bottom: 1.5rem; font-size: .9rem; }
+</style>
+</head>
+<body>
+<nav><a href="./index.html">Home</a> &middot; <a href="./terms.html">Terms of Sale and Refund Policy</a></nav>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Bulk SEO Traffic Checker (Chrome extension) &middot; Last updated 2 September 2026</p>
+
+<h2>Short version</h2>
+<p>The extension has no analytics, no advertising, no tracking, and no server of its
+own. The domains you paste never leave your computer. The only thing ever sent off
+your device is your licence key, sent to the payment provider once a day to confirm
+your subscription is still active. Nothing is sold or shared with anyone else.</p>
+
+<h2>What the extension stores, and where</h2>
+<table>
+  <tr><th>Data</th><th>Where it lives</th><th>Why</th></tr>
+  <tr>
+    <td>Domains you paste into the box</td>
+    <td>In the page only, while the popup is open. Not saved unless you press Save.</td>
+    <td>To build the URLs that get opened in tabs</td>
+  </tr>
+  <tr>
+    <td>Saved domain lists (Pro)</td>
+    <td><code>chrome.storage.local</code> on your computer</td>
+    <td>So you can reuse a list. Never uploaded.</td>
+  </tr>
+  <tr>
+    <td>Licence key, the date it was last checked, and a plan label such as "Pro"</td>
+    <td><code>chrome.storage.sync</code></td>
+    <td>To keep Pro unlocked without asking you to paste the key again</td>
+  </tr>
+</table>
+<p><code>chrome.storage.sync</code> is a Chrome feature: Chrome replicates it through
+<em>your own</em> Google account so that your licence key follows you to another
+computer where you are signed in. That replication is done by Chrome, not by the
+Developer, and the Developer cannot read it.</p>
+
+<h2>The only network request the extension makes</h2>
+<p>Once every 24 hours at most, and only if you have activated a licence, the
+extension sends a single HTTPS request:</p>
+<ul>
+  <li><strong>To:</strong> <code>https://api.polar.sh/v1/customer-portal/license-keys/validate</code>
+      (Polar Software Inc., the payment provider and merchant of record)</li>
+  <li><strong>Containing:</strong> your licence key and the Developer's public
+      organization id. Nothing else.</li>
+  <li><strong>Purpose:</strong> to confirm the licence is still active, so that a
+      cancelled subscription stops unlocking Pro.</li>
+</ul>
+<p>The domains you paste, your saved lists, your browsing history, and the pages you
+visit are <strong>never</strong> part of that request and are never uploaded
+anywhere. If you have not activated a licence, the extension makes no network
+requests at all.</p>
+<p>Polar receives that request and, like any web server, sees your IP address and
+timestamp. Polar's handling of that is covered by
+<a href="https://polar.sh/legal/privacy">Polar's privacy policy</a>.</p>
+
+<h2>Payment data</h2>
+<p>Purchases happen on Polar's own hosted checkout page in a normal browser tab, not
+inside the extension. Your card details are handled entirely by Polar and its payment
+processor. <strong>The Developer never sees or stores your card number.</strong> The
+Developer can see the order and the email address you used, because that is how a
+licence key and a refund are issued.</p>
+
+<h2>Permissions the extension asks for</h2>
+<p>Exactly one: <code>storage</code>, to keep your licence key and saved lists on your
+device. The extension requests <strong>no host permissions</strong>, so it cannot read
+or change the content of any website you visit, and it has no access to your browsing
+history, bookmarks, tabs content, downloads, cookies, or clipboard. It opens new tabs
+at URLs it builds from the domains you typed; what you then do on those third-party
+sites is between you and those sites.</p>
+<h2>Chrome Web Store Limited Use disclosure</h2>
+<p>The extension's use of information received from Google APIs and from users adheres
+to the
+<a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use/">Chrome Web Store User Data Policy</a>,
+including the Limited Use requirements. Specifically, user data is:</p>
+<ul>
+  <li><strong>not sold</strong> to anybody, ever, and not transferred to advertisers,
+      data brokers, or information resellers;</li>
+  <li><strong>not used</strong> for advertising, retargeting, personalisation, or
+      credit assessment;</li>
+  <li><strong>not transferred</strong> to any third party except the single licence
+      check described above, which is necessary to provide the paid feature you
+      bought;</li>
+  <li><strong>not read by any human</strong>, since no user data reaches the Developer
+      other than your purchase email address, which Polar provides for the sale.</li>
+</ul>
+
+<h2>Data retention and deletion</h2>
+<ul>
+  <li>Press <strong>Sign out</strong> in the extension's Pro tab to delete the stored
+      licence key from your device and your Chrome sync data immediately.</li>
+  <li>Delete a saved list from inside the extension, or uninstall the extension, to
+      remove local data.</li>
+  <li>Purchase records (email address, order, invoice) are held by Polar as merchant
+      of record for as long as tax law requires them to be kept. To ask about deletion
+      of your purchase record, email the address below and it will be forwarded to
+      Polar where the Developer cannot delete it directly.</li>
+</ul>
+
+<h2>Children</h2>
+<p>This is a professional SEO tool. It is not directed at children and is not intended
+for use by anyone under 13.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the extension's data practices ever change, this page is updated and the date at
+the top changes with it. A change that affects what leaves your device will also be
+disclosed inside the extension before it takes effect.</p>
+
+<h2>Contact</h2>
+<p>Abdullah Khan &middot; <a href="mailto:itsabdullahkhan4@gmail.com">Email</a>
+&middot; replies within 3 business days.</p>
+
+<footer>
+Bulk SEO Traffic Checker &middot;
+<a href="https://chromewebstore.google.com/detail/fdmdfcmmkgkgiifbhkmomfkjpebjilah">Chrome Web Store listing</a> &middot;
+<a href="./terms.html">Terms of Sale and Refund Policy</a>
+<br>Ahrefs is a trademark of Ahrefs Pte. Ltd. This extension is independent and not
+affiliated with or endorsed by Ahrefs.
+</footer>
+</body>
+</html>
